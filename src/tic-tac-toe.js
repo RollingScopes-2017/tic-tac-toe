@@ -73,7 +73,7 @@ class TicTacToe {
                 }
             }
 
-            if(this.moveCount == (this.matrixSize**2)){
+            if(this.moveCount == Math.pow(this.matrixSize, 2)) {
                 this.gameState = 'DRAW';
                 return this;
             }
@@ -91,7 +91,7 @@ class TicTacToe {
     }
 
     noMoreTurns() {
-        if(this.moveCount == (this.matrixSize**2)){
+        if(this.moveCount == Math.pow(this.matrixSize, 2)) {
             return true;
         }
         return false;
